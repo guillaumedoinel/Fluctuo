@@ -42,6 +42,14 @@
         p_table.appendRows(providersTableData);
       }
     });
+
+    var providersTableData = [];
+    providersTableData.push({
+      "name": "TOTO",
+      "slug": "TITI"
+    });
+    p_table.appendRows(providersTableData);
+
   }
 
   /***************************************************************************************************/
