@@ -25,6 +25,14 @@
           });
         }
         p_table.appendRows(providersTableData);
+      },
+      error: function() {
+        var providersTableData = [];
+        providersTableData.push({
+          "name": "TOTO",
+          "slug": "TITI"
+        });
+        p_table.appendRows(providersTableData);
       }
     });
   }
