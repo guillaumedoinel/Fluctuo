@@ -19,9 +19,9 @@
       ,
       dataType: "json",
       success: function(response) {
-        var providersJSON = response.data.providers;
+        /*var providersJSON = response.data.providers;
         var providersTableData = [];
-        /*for (var i = 0, len = providersJSON.length; i < len; i++) {
+        for (var i = 0, len = providersJSON.length; i < len; i++) {
           providersTableData.push({
             "name": providersJSON[i].name,
             "slug": providersJSON[i].slug
@@ -32,23 +32,8 @@
           "slug": "successTITI"
         });
         p_table.appendRows(providersTableData);
-      },
-      error: function() {
-        var providersTableData = [];
-        providersTableData.push({
-          "name": "TOTO",
-          "slug": "TITI"
-        });
-        p_table.appendRows(providersTableData);
       }
     });
-
-    var providersTableData = [];
-    providersTableData.push({
-      "name": "TOTO",
-      "slug": "TITI"
-    });
-    p_table.appendRows(providersTableData);
 
   }
 
