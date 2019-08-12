@@ -27,6 +27,7 @@
             "slug": providersJSON[i].slug
           });
         }*/
+        var providersTableData = [];
         providersTableData.push({
           "name": "successTOTO",
           "slug": "successTITI"
