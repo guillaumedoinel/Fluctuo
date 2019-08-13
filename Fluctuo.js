@@ -11,7 +11,7 @@
       url: "https://api.multicycles.org/v1?access_token=25jBlbee9movEcBXSR7n2HQHkJLdHsmj",
       type: "POST",
       headers: {
-        'Content-Type': "application/json"
+        Content-Type: "application/json"
       },
       data: JSON.stringify(
         {query:"query ($lat: Float!, $lng: Float!) {\n  providers(lat: $lat, lng: $lng) {\n    name\n    slug\n  }\n}\n",variables:{"lat":59.8939225,"lng":10.7150777}}
