@@ -5,7 +5,7 @@
   /***************************************************************************************************/
 
   // Browse companies listed as parameter by UUID & Name and get all investments & acquisitions
-  function getProviders(/*p_table*/) {
+  function getProviders(p_table) {
 
     $.ajax({
       url: "https://api.multicycles.org/v1?access_token=25jBlbee9movEcBXSR7n2HQHkJLdHsmj",
@@ -28,13 +28,13 @@
             "slug": providersJSON[i].slug
           });
         }*/
-        /*var providersTableData = [];
+        var providersTableData = [];
         providersTableData.push({
           "name": "successTOTO",
           "slug": "successTITI"
         });
-        p_table.appendRows(providersTableData);*/
-        console.log("response.body");
+        p_table.appendRows(providersTableData);
+        //console.log("response.body");
       }
     });
 
@@ -44,7 +44,7 @@
   /******************************** RUNNING CODE *****************************************************/
   /***************************************************************************************************/
 
-  /*var myConnector = tableau.makeConnector();
+  var myConnector = tableau.makeConnector();
 
   // When you create multiple table schemas, the WDC API calls the getData function once for each schema.
   myConnector.getSchema = function(schemaCallback) {
@@ -78,13 +78,13 @@
 
   };
 
-  tableau.registerConnector(myConnector);*/
+  tableau.registerConnector(myConnector);
 
   $(document).ready(function() {
     $("#submitButton").click(function() {
-      /*tableau.connectionName = "Fluctuo Feed";
-      tableau.submit();*/
-      getProviders();
+      tableau.connectionName = "Fluctuo Feed";
+      tableau.submit();
+      //getProviders();
     });
   });
 })();
