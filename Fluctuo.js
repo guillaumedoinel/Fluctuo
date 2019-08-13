@@ -40,7 +40,7 @@
         /*for (var i = 0, len = providersTableData.length; i < len; i++) {
           console.log(providersTableData[i]);
         }*/
-        console.log(response.body);
+        console.log(response);
       },
       error: function(response2) {
         console.log("la function ERROR est appellee");
