@@ -12,7 +12,7 @@
       type: "POST",
       //contentType: "text/plain", // application/json
       headers: {
-        "Accept": "application/json",
+        "Accept": "*/*",
         "Content-Type": "application/json"
       },
       data: JSON.stringify(
