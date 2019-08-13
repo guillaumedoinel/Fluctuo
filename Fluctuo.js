@@ -5,7 +5,7 @@
   /***************************************************************************************************/
 
   // Browse companies listed as parameter by UUID & Name and get all investments & acquisitions
-  function getProviders(p_table) {
+  function getProviders(/*p_table*/) {
 
     $.ajax({
       url: "https://api.multicycles.org/v1?access_token=25jBlbee9movEcBXSR7n2HQHkJLdHsmj",
@@ -28,12 +28,13 @@
             "slug": providersJSON[i].slug
           });
         }*/
-        var providersTableData = [];
+        /*var providersTableData = [];
         providersTableData.push({
           "name": "successTOTO",
           "slug": "successTITI"
         });
-        p_table.appendRows(providersTableData);
+        p_table.appendRows(providersTableData);*/
+        console.log(response.body);
       }
     });
 
@@ -81,8 +82,9 @@
 
   $(document).ready(function() {
     $("#submitButton").click(function() {
-      tableau.connectionName = "Fluctuo Feed";
-      tableau.submit();
+      /*tableau.connectionName = "Fluctuo Feed";
+      tableau.submit();*/
+      getProviders();
     });
   });
 })();
