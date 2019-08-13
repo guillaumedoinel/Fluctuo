@@ -20,20 +20,20 @@
       ),
       //dataType: "json",
       success: function(response) {
-        /*var providersJSON = response.data.providers;
+        var providersJSON = response.data.providers;
         var providersTableData = [];
         for (var i = 0, len = providersJSON.length; i < len; i++) {
           providersTableData.push({
             "name": providersJSON[i].name,
             "slug": providersJSON[i].slug
           });
-        }*/
-        var providersTableData = [];
+        }
+        /*var providersTableData = [];
         providersTableData.push({
           "name": "successTOTO",
           "slug": "successTITI"
         });
-        p_table.appendRows(providersTableData);
+        p_table.appendRows(providersTableData);*/
         //console.log("response.body");
       }
     });
