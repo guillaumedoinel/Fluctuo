@@ -37,7 +37,12 @@
         //console.log("response.body");
       }
     });
-
+    var providersTableData = [];
+    providersTableData.push({
+      "name": "successTOTO",
+      "slug": "successTITI"
+    });
+    p_table.appendRows(providersTableData);
   }
 
   /***************************************************************************************************/
