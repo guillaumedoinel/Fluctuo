@@ -44,7 +44,7 @@
   /******************************** RUNNING CODE *****************************************************/
   /***************************************************************************************************/
 
-  var myConnector = tableau.makeConnector();
+  /*var myConnector = tableau.makeConnector();
 
   // When you create multiple table schemas, the WDC API calls the getData function once for each schema.
   myConnector.getSchema = function(schemaCallback) {
@@ -78,7 +78,7 @@
 
   };
 
-  tableau.registerConnector(myConnector);
+  tableau.registerConnector(myConnector);*/
 
   $(document).ready(function() {
     $("#submitButton").click(function() {
