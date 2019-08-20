@@ -84,10 +84,10 @@
   // When you create multiple table schemas, the WDC API calls the getData function once for each schema.
   // As a result, you need a way to change the call to the API for each table. The easiest way to do this is to use the table.tableInfo.id value that we set in the table schemas.
   myConnector.getData = function(table, doneCallback) {
-
-    getProviders(table);
-    doneCallback();
-
+    if (table.tableInfo.id == "Providers") {
+      getProviders(table);
+      doneCallback();
+    }
   };
 
   tableau.registerConnector(myConnector);
