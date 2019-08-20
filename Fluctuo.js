@@ -20,7 +20,12 @@
       ),
       dataType: "json",
       success: function(response) {
-        var providersJSON = response.data.providers;
+        //var providersJSON = response.data.providers;
+
+        var providersJSON=[
+          {name:"TOTO",slug:"TITI"},
+          {name:"TATA",slug:"TUTU"}
+        ]
         var providersTableData = [];
         for (var i = 0, len = providersJSON.length; i < len; i++) {
           providersTableData.push({
@@ -34,7 +39,6 @@
           "name": "successTOTO",
           "slug": "successTITI"
         });*/
-
 
         p_table.appendRows(providersTableData);
         /*for (var i = 0, len = providersTableData.length; i < len; i++) {
